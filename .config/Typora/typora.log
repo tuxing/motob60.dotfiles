@@ -1,0 +1,113 @@
+INFO 15/11/2025, 5:12:21 am  28  launch with argv [/usr/share/typora/Typora, --enable-wayland-ime]
+INFO 15/11/2025, 5:12:21 am  123  ------------------start------------------
+DEBUG 15/11/2025, 5:12:21 am  127  before setting 
+DEBUG 15/11/2025, 5:12:21 am  139  prepDatabase /home/zen/.config/Typora/profile.data
+DEBUG 15/11/2025, 5:12:21 am  142  prepDatabase /home/zen/.config/Typora/history.data
+INFO 15/11/2025, 5:12:21 am  144  OS is linux 6.18.0-rc4-2-cachyos-rc
+INFO 15/11/2025, 5:12:21 am  144  launchFromDiffVersion, pre version is undefined
+INFO 15/11/2025, 5:12:21 am  144  start LM in devVersion=false
+INFO 15/11/2025, 5:12:21 am  150  overwriteThemeFolder
+DEBUG 15/11/2025, 5:12:21 am  152  after setting 
+INFO 15/11/2025, 5:12:21 am  152  typora version: 1.12.3
+DEBUG 15/11/2025, 5:12:21 am  181  app.openFile
+INFO 15/11/2025, 5:12:21 am  183  [watch L]
+DEBUG 15/11/2025, 5:12:21 am  183  prepDatabase /home/zen/.config/Typora/r3IykhhRiH
+INFO 15/11/2025, 5:12:21 am  185  no info
+INFO 15/11/2025, 5:12:21 am  185  ls put SLicense
+DEBUG 15/11/2025, 5:12:21 am  185  onUnfillLicense
+DEBUG 15/11/2025, 5:12:21 am  185  trailRemains is 15
+INFO 15/11/2025, 5:12:21 am  185  [L] installDate is 11/15/2025, trail remains: 15 days
+DEBUG 15/11/2025, 5:12:21 am  185  onUnfillLicense
+INFO 15/11/2025, 5:12:21 am  185  [watch L] hasL: false
+INFO 15/11/2025, 5:12:21 am  187  updateTheme
+DEBUG 15/11/2025, 5:12:21 am  223  added recovery 1 null  (0)
+INFO 15/11/2025, 5:12:21 am  245  [focus] 1
+INFO 15/11/2025, 5:12:21 am  245  [blur] 1
+INFO 15/11/2025, 5:12:21 am  245  [win] blur
+INFO 15/11/2025, 5:12:21 am  245  [focus] 1
+DEBUG 15/11/2025, 5:12:21 am  252  putAccelerator File -> &File
+DEBUG 15/11/2025, 5:12:21 am  252  putAccelerator Edit -> &Edit
+DEBUG 15/11/2025, 5:12:21 am  253  putAccelerator Paragraph -> &Paragraph
+DEBUG 15/11/2025, 5:12:21 am  253  putAccelerator Format -> F&ormat
+DEBUG 15/11/2025, 5:12:21 am  253  putAccelerator View -> &View
+DEBUG 15/11/2025, 5:12:21 am  253  putAccelerator Themes -> &Themes
+DEBUG 15/11/2025, 5:12:21 am  253  putAccelerator Help -> &Help
+INFO 15/11/2025, 5:12:21 am  299  synced recovery
+user-dict.json not found
+DEBUG 15/11/2025, 5:12:21 am  634  onUnfillLicense
+ERROR 15/11/2025, 5:12:21 am  639  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 15/11/2025, 5:12:21 am  642  handle document.loadData
+DEBUG 15/11/2025, 5:12:21 am  642  document.loadData 0
+ERROR 15/11/2025, 5:12:21 am  643  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 15/11/2025, 5:12:21 am  676  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 15/11/2025, 5:12:21 am  676  [RenderProcess 1][Log] reset NodeMap
+DEBUG 15/11/2025, 5:12:21 am  684  added recovery 1   (0)
+INFO 15/11/2025, 5:12:21 am  686  synced recovery
+INFO 15/11/2025, 5:12:22 am  775  [RenderProcess 1][Log] onBecomeActive
+INFO 15/11/2025, 5:12:22 am  775  [RenderProcess 1][Log] File.activeWindow = true
+INFO 15/11/2025, 5:12:28 am  7203  [blur] 1
+INFO 15/11/2025, 5:12:28 am  7203  [win] blur
+INFO 15/11/2025, 5:14:17 am  116010  [focus] 1
+ERROR 15/11/2025, 5:14:22 am  121741  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:22 am  121745  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:25 am  124195  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:25 am  124196  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:27 am  126519  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:27 am  126521  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:29 am  128409  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:29 am  128412  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:31 am  130690  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:31 am  130693  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:33 am  132570  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:33 am  132571  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:35 am  134496  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:35 am  134497  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:37 am  136480  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:37 am  136482  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:42 am  141084  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 15/11/2025, 5:14:42 am  141085  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 15/11/2025, 5:14:46 am  144781  synced recovery
+INFO 15/11/2025, 5:14:46 am  144782  ----------------before-quit-----------------
+INFO 15/11/2025, 5:14:46 am  144782  ------------------will-quit------------------
+INFO 15/11/2025, 5:14:46 am  144784  -----------------quit------------------
+INFO 15/11/2025, 5:14:46 am  144784  closeLogging

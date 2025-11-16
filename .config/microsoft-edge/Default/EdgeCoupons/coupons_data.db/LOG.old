@@ -1,0 +1,6 @@
+2025/11/07-00:44:54.583 466c Reusing MANIFEST /home/zen/.config/microsoft-edge/Default/EdgeCoupons/coupons_data.db/MANIFEST-000001
+2025/11/07-00:44:54.583 466c Recovering log #10
+2025/11/07-00:44:54.584 466c Reusing old log /home/zen/.config/microsoft-edge/Default/EdgeCoupons/coupons_data.db/000010.log 
+2025/11/07-00:45:03.071 466c Level-0 table #14: started
+2025/11/07-00:45:03.081 466c Level-0 table #14: 672536 bytes OK
+2025/11/07-00:45:03.083 466c Delete type=0 #10

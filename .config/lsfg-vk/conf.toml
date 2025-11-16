@@ -1,0 +1,44 @@
+version = 1
+
+[global]
+no_fp16 = false
+
+[[game]]
+exe = "Genshin"
+multiplier = 3
+flow_scale = 0.5
+performance_mode = false
+hdr_mode = false
+experimental_present_mode = "fifo"
+
+[[game]]
+exe = "GridLegends.exe"
+multiplier = 3
+flow_scale = 0.5
+performance_mode = false
+hdr_mode = false
+experimental_present_mode = "fifo"
+
+[[game]]
+exe = "SHIFT.exe"
+multiplier = 3
+flow_scale = 0.5
+performance_mode = false
+hdr_mode = true
+experimental_present_mode = "fifo"
+
+[[game]]
+exe = "benchmark"
+multiplier = 4
+flow_scale = 1.0
+performance_mode = false
+hdr_mode = false
+experimental_present_mode = "fifo"
+
+[[game]]
+exe = "vkcube"
+multiplier = 4
+flow_scale = 0.5
+performance_mode = true
+hdr_mode = false
+experimental_present_mode = "fifo"
