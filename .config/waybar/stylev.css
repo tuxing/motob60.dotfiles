@@ -26,7 +26,7 @@
 
 #workspaces button {
   all: initial;
-  padding: 2px 0; /* Was 0 6px */
+  padding: 4px 0; /* Was 0 6px */
   margin: 1.5px 0; /* Was 0 1.5px */
   min-height: 6px; /* Was min-width */
 }
@@ -92,7 +92,7 @@ tooltip {
 #taskbar button {
     /* Use shorthand padding: top right bottom left */
     /* Adds 10px spacing above and below each icon */
-    padding: 6px 0px 6px 0px;
+    padding: 8px 0px 8px 0px;
 
     /* Example: adjust icon size if necessary */
     /* font-size: 24px; */

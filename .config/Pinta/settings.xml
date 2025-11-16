@@ -12,8 +12,8 @@
   <setting name="menubar-shown" type="System.Boolean">False</setting>
   <setting name="statusbar-shown" type="System.Boolean">True</setting>
   <setting name="toolbox-shown" type="System.Boolean">True</setting>
-  <setting name="last-dialog-directory" type="System.String">file:///home/zen/Downloads</setting>
-  <setting name="last-selected-tool" type="System.String">PaintBrushTool</setting>
+  <setting name="last-dialog-directory" type="System.String">file:///home/zen/Pictures</setting>
+  <setting name="last-selected-tool" type="System.String">MoveSelectedTool</setting>
   <setting name="primary-color" type="System.String">FF000000</setting>
   <setting name="secondary-color" type="System.String">FFFFFFFF</setting>
   <setting name="recently-used-colors" type="System.String">FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5,FFE5E5E5</setting>
@@ -25,4 +25,7 @@
   <setting name="freeformshapetool-brush-width" type="System.Int32">2</setting>
   <setting name="clonestamptool-brush-width" type="System.Int32">2</setting>
   <setting name="recolortool-brush-width" type="System.Int32">2</setting>
+  <setting name="new-image-width" type="System.Int32">2880</setting>
+  <setting name="new-image-height" type="System.Int32">1800</setting>
+  <setting name="new-image-bg" type="Pinta.NewImageDialog+BackgroundType">White</setting>
 </settings>
