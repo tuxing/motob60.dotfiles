@@ -1,0 +1,53 @@
+#!/bin/bash
+
+LOG_FILE="/tmp/screensaver.log"
+
+# Clean log file
+echo "Screensaver script started at $(date)" > "$LOG_FILE"
+
+# Function to exit cleanly
+exit_screensaver() {
+  echo "Exit function called at $(date)" >> "$LOG_FILE"
+  # Kill the tte process first
+  pkill -x tte 2>/dev/null
+  # Kill the alacritty window
+  pkill -f "alacritty --title Screensaver" 2>/dev/null
+  exit 0
+}
+
+# Trap exit signals
+trap exit_screensaver SIGINT SIGTERM SIGHUP SIGQUIT
+# --- FIXED TYPO HERE ---
+echo "Trap set." >> "$LOG_FILE"
+
+# Give Niri time to make the window fullscreen
+sleep 1
+echo "Sleep complete." >> "$LOG_FILE"
+
+# --- Re-integrated TTE Loop ---
+while true; do
+  echo "Starting TTE loop" >> "$LOG_FILE"
+  # Get a random effect
+  effect=$(tte 2>&1 | grep -oP '{\K[^}]+' | tr ',' ' ' | tr ' ' '\n' | sed -n '/^beams$/,$p' | sort -u | shuf -n1)
+  
+  # Launch tte, redirecting stdin from /dev/null so it doesn't steal keypresses
+  tte -i ~/.config/omarchy/branding/screensaver.txt \
+    --frame-rate 240 --canvas-width 0 --canvas-height $(($(tput lines) - 2)) --anchor-canvas c --anchor-text c \
+    "$effect" < /dev/null &
+
+  echo "TTE launched with effect: $effect" >> "$LOG_FILE"
+  TTE_PID=$!
+
+  # Wait for a keypress OR for TTE to exit on its own
+  while pgrep -x tte >/dev/null; do
+    # Wait for a keypress with a 1-second timeout
+    if read -n 1 -t 1; then
+      echo "Key pressed. Exiting." >> "$LOG_FILE"
+      exit_screensaver
+    fi
+  done
+
+  # If we're here, TTE finished on its own, so just loop again
+  echo "TTE finished, looping." >> "$LOG_FILE"
+done
+

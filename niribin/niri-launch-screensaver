@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# --- Guards ---
+# Exit early if screensaver command is missing
+if ! command -v /home/zen/niribin/niri-cmd-screensaver &>/dev/null; then
+  echo "Error: niri-cmd-screensaver not found." >&2
+  exit 1
+fi
+
+# Exit early if screensaver is already running
+# Updated pgrep to be more robust
+if pgrep -f "alacritty --title Screensaver" >/dev/null; then
+  exit 0
+fi
+
+# Allow screensaver to be turned off but also force started
+if [[ -f ~/.local/state/omarchy/toggles/screensaver-off ]] && [[ $1 != "force" ]]; then
+  exit 1
+fi
+
+# --- Niri-specific Logic for a Single Monitor ---
+
+# Define the alacritty command
+ALACRITTY_CMD=(
+  "alacritty"
+  "--config-file" "$HOME/.local/share/omarchy/default/alacritty/screensaver.toml"
+  # Set a static title instead of using the env var
+  "--title" "Screensaver"
+  "-e" "/home/zen/niribin/niri-cmd-screensaver"
+)
+
+# Launch the single instance.
+"${ALACRITTY_CMD[@]}" &

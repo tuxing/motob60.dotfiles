@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Set the target user
+TARGET_USER="zen"
+COMMAND="/home/zen/.local/share/omarchy/bin/omarchy-menu system"
+LOG_FILE="/tmp/powerbtn_wrapper.log"
+
+echo "Attempting to run command for $TARGET_USER at $(date)" >> $LOG_FILE 2>&1
+
+# Find the user's current session environment variables
+# We use loginctl to securely get session information
+SESSION_ID=$(loginctl list-sessions | grep $TARGET_USER | awk '{print $1}')
+
+if [ -n "$SESSION_ID" ]; then
+    export XDG_RUNTIME_DIR=$(loginctl show-session $SESSION_ID -p RunTimeDir | cut -d'=' -f2)
+    export WAYLAND_DISPLAY=$(loginctl show-session $SESSION_ID -p WaylandDisplay | cut -d'=' -f2)
+    export DISPLAY=$(loginctl show-session $SESSION_ID -p Display | cut -d'=' -f2)
+    # Get X authority file for Xwayland apps if needed
+    export XAUTHORITY=$(loginctl show-session $SESSION_ID -p XAutority | cut -d'=' -f2)
+
+
+    echo "Found session variables: WAYLAND_DISPLAY=$WAYLAND_DISPLAY, DISPLAY=$DISPLAY, XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR" >> $LOG_FILE 2>&1
+
+    # Run the command as the target user with the correct environment
+    # The 'env' command passes the exported variables
+    sudo -u $TARGET_USER env WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $COMMAND >> $LOG_FILE 2>&1 &
+    
+    echo "Command executed, check for results." >> $LOG_FILE
+else
+    echo "Could not find an active session for user $TARGET_USER." >> $LOG_FILE
+fi

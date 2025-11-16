@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# --- Absolute Paths for Commands ---
+PKILL_CMD="/usr/bin/pkill"
+PGREP_CMD="/usr/bin/pgrep"
+SWAYIDLE_CMD="/usr/bin/swayidle"
+SLEEP_CMD="/usr/bin/sleep"
+NIRI_CMD="/usr/bin/niri"
+BRIGHTNESS_CMD="/usr/bin/brightnessctl"
+
+# Paths to your custom scripts
+LOCK_SCRIPT="/home/zen/.local/share/omarchy/bin/omarchy-lock-screen"
+SCREENSAVER_SCRIPT="/home/zen/niribin/niri-launch-screensaver"
+
+# --- Helper Definitions ---
+KILL_SCREENSAVER="$PKILL_CMD -f \"[n]iri-cmd-screensaver\""
+CHECK_LOCK="$PGREP_CMD -x \"hyprlock\""
+
+# Kill any existing swayidle instance
+$PKILL_CMD -x swayidle
+
+# --- Start swayidle ---
+# Note: We must launch the command with its full path
+# We add '-i' to ignore idle-inhibit requests (e.g., from fullscreen videos)
+$SWAYIDLE_CMD -w  \
+    timeout 150 "$CHECK_LOCK || $SCREENSAVER_SCRIPT" \
+    timeout 240 "$KILL_SCREENSAVER ; $SLEEP_CMD 0.5 ; $LOCK_SCRIPT" \
+    timeout 260 "$KILL_SCREENSAVER ; $NIRI_CMD msg action power-off-monitors" \
+        resume "$KILL_SCREENSAVER ; $SLEEP_CMD 0.5 ; $NIRI_CMD msg action power-on-monitors && $BRIGHTNESS_CMD -r" \
+    before-sleep "$KILL_SCREENSAVER ; $LOCK_SCRIPT" \
+    after-resume "$KILL_SCREENSAVER ; $SLEEP_CMD 0.5 ; $NIRI_CMD msg action power-on-monitors"
