@@ -124,7 +124,7 @@ output "DP-2" {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 0
+    gaps 2
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -305,7 +305,7 @@ spawn-at-startup "mako"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-sh-at-startup "walker --gapplication-service"
 spawn-sh-at-startup "alacritty --title firstterm"
-spawn-at-startup "dolphin"
+spawn-at-startup "nautilus"
 spawn-at-startup "zen-browser"
 spawn-at-startup "swayosd-server"
 spawn-sh-at-startup "alacritty -T BTop -e btop"

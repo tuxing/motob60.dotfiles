@@ -3,12 +3,12 @@
 * {
   background-color: @background;
   color: @foreground;
-  border: none;
+  border: 0;
   border-radius: 0;
   min-height: 0;
   font-family: 'Liberation Mono';
   font-size: 12px;
-  padding: 0; /* Reset all padding */
+  padding: 1px; /* Reset all padding */
   margin: 0; /* Reset all margin */
 }
 
@@ -61,7 +61,7 @@
 }
 
 #tray {
-  margin-bottom: 16px; /* Was margin-right */
+  margin-bottom: 8px; /* Was margin-right */
   /* margin-left: 2px; <-- Removed */
   /* margin-right: 2px; <-- Removed */
 }

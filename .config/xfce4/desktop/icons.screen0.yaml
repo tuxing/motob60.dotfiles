@@ -12,39 +12,26 @@ configs:
       width: 2880
       height: 1800
   icons:
+    "/home/zen/Desktop/network.desktop":
+      row: 4
+      col: 1
     "trash:///":
       row: 2
       col: 0
+    "/home/zen/Desktop/steam.desktop":
+      row: 3
+      col: 1
     "6007d68b-5e7f-4e02-a427-cf3e7df62d45":
       row: 6
       col: 0
       last_seen: 1763320480618772
-    "/home/zen/Desktop/steam.desktop":
-      row: 3
-      col: 1
-    "8E9AA7149AA6F83B":
-      row: 5
-      col: 0
-      last_seen: 1763320480611555
     "c7cef45a-7c07-471b-8728-ff8fbec7af1a":
       row: 7
       col: 0
       last_seen: 1763320480626599
-    "7592E42104D7DC63":
-      row: 8
-      col: 0
-      last_seen: 1763320480634161
-    "3bbbade1-c3d1-4943-bc8f-840d4b9cd6f5":
-      row: 2
-      col: 1
-      last_seen: 1763320588282542
     "/home/zen":
       row: 0
       col: 0
-    "46c05a4e-035a-4fcd-a3af-53ce295ec34f":
-      row: 3
-      col: 0
-      last_seen: 1763320480594604
     "7dbe5b26-ab79-4010-af7f-4a2811f5f3c4":
       row: 1
       col: 1
@@ -53,10 +40,35 @@ configs:
       row: 4
       col: 0
       last_seen: 1763320480603315
+    "/home/zen/Desktop/trash-can.desktop":
+      row: 3
+      col: 1
+    "/":
+      row: 1
+      col: 0
+    "/home/zen/Desktop/computer.desktop":
+      row: 5
+      col: 1
+    "3bbbade1-c3d1-4943-bc8f-840d4b9cd6f5":
+      row: 2
+      col: 1
+      last_seen: 1763320588282542
+    "/home/zen/Desktop/user-home.desktop":
+      row: 6
+      col: 1
+    "46c05a4e-035a-4fcd-a3af-53ce295ec34f":
+      row: 3
+      col: 0
+      last_seen: 1763320480594604
+    "7592E42104D7DC63":
+      row: 8
+      col: 0
+      last_seen: 1763320480634161
+    "8E9AA7149AA6F83B":
+      row: 5
+      col: 0
+      last_seen: 1763320480611555
     "29491dbd-17dd-443c-a36f-edd2e4c6ef6e":
       row: 0
       col: 1
       last_seen: 1763320588265816
-    "/":
-      row: 1
-      col: 0
