@@ -3,5 +3,5 @@
 # ibus session bus with the below address.
 # If the IBUS_ADDRESS environment variable is set, it will
 # be used rather than this file.
-IBUS_ADDRESS=unix:path=/home/zen/.cache/ibus/dbus-fkdr8CDb,guid=b1a953f58a71e4e69af1ef66691ad55b
-IBUS_DAEMON_PID=1118
+IBUS_ADDRESS=unix:path=/home/zen/.cache/ibus/dbus-nchXvCYj,guid=7db2dff285e14ed7f5eef19e691b1455
+IBUS_DAEMON_PID=35498
