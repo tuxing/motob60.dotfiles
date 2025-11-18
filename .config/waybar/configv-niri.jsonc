@@ -4,7 +4,7 @@
   "position": "right",
   "spacing": 0,
   "width": 22,
-  "margin": 2,
+  "margin": 4,
   "height": 1024,
   "modules-left": [
     "custom/omarchy",
@@ -165,16 +165,19 @@
         }
     }, 
   "custom/power_usage": {
-    "exec": "sensors | awk '/power1:/ {print $2,$3}'",
-    "interval": 2,
+    "exec": "~/.config/waybar/scripts/power_monitor.sh",
+    "return-type": "text",
+    "tail": true,
     "on-click": "niri msg action quit",
-    "rotate": 90
+    "rotate": 90,
+    "tooltip": false
   },
   "custom/cpu_temp": {
-    "exec": "sensors | awk '/Package id 0:/ {gsub(/\\+/,\"\", $4); print $4}'",
+    "exec": "cat /tmp/waybar_temps",
     "interval": 2,
     "on-click": "/home/zen/.local/share/omarchy/bin/omarchy-menu system",
-    "rotate": 90
+    "rotate": 90,
+    "tooltip": false
   },
   "memory": {
         "format": "{percentage}%",
